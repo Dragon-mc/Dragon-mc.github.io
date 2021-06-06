@@ -1,13 +1,12 @@
 Resolve.prototype = {
   constructor: Resolve,
-  getResolve: function (subject, course) {
-    return this.resolves[course][subject] || []
+  getResolve: function (subject) {
+    return this.resolves[subject] || []
   }
 }
 
 function Resolve () {
-  this.resolves = [
-    {
+  this.resolves = {
       "爱因斯坦曾经说过“大多数人都以为是才智成就了科学家，他们错了，是品格”。下列名言与这段话含义一致的是:（）": [
           "才者，德之资也；德者，才之帅也"
       ],
@@ -824,9 +823,7 @@ function Resolve () {
       ],
       "因国情问题，我国公民的受教育权仅能保障公民接受免费义务教育权，不包括对接受中等技术和职业教育、高等教育、继续教育等权利的保障。": [
           "错误"
-      ]
-    },
-    {
+      ],
       "中国封建社会的基本生产结构是（）。": [
           "小农经济"
       ],
@@ -2792,9 +2789,7 @@ function Resolve () {
       ],
       "中国特色社会主义进入新时代，我国社会主要矛盾已经转化为人民日益增长的美好生活需要和不平衡不充分的发展之间的矛盾。": [
           "正确"
-      ]
-    },
-    {
+      ],
       "毛泽东思想的主要理论渊源是（ ）": [
           "马列主义"
       ],
@@ -4035,9 +4030,7 @@ function Resolve () {
       ],
       "坚持中国共产党的领导，是党和国家的根本所在、命脉所在。": [
           "正确"
-      ]
-    },
-    {
+      ],
       "在马克思主义科学体系中，处于核心地位的是（）": [
           "科学社会主义"
       ],
@@ -5326,5 +5319,4 @@ function Resolve () {
           "正确"
       ]
     }
-  ]
 }
